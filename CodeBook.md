@@ -1,8 +1,8 @@
-Code Book for run_analysis.R
+###Code Book for run_analysis.R
 
 Introduction: run_analysis.R script performs transformations to obtain and clean data required for the course project of "Getting and Cleaning Data" course on Coursera.
 
-Inputs:
+##Inputs:
 
 The following files are considered as input for the script run_analysis.R. Refer to the data dictionary at the end of this file for details on the contents of these files.
 
@@ -15,11 +15,11 @@ y_train.txt
 subject_test.txt
 subject_train.txt
 
-Outputs:
+##Outputs:
 tidydata1.txt
 tidydata2.txt
 
-Transformations Performed:
+##Transformations Performed:
 
 1.  Read the features.txt into a R data frame "finfo"
 
@@ -49,7 +49,7 @@ Transformations Performed:
 
 14. Write the "finaldata" data frame into "tidydata2.txt" to create the desired tidy data set.
 
-Input Data Description:
+##Input Data Description:
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -106,19 +106,19 @@ tBodyAccJerkMean
 tBodyGyroMean
 tBodyGyroJerkMean
 
-Input Data Dictionary:
+##Input Data Dictionary:
 
-File: features.txt
+#File: features.txt
 
 This file contains two columns
 V1: Lists the sequence number ranging from 1 to 561
 V2: Lists the variables found in files X_test and X_train files
 
-Files: subject_test.txt, subject_train.txt
+#Files: subject_test.txt, subject_train.txt
 
 These files contain one variable indicating the ID of the subject ranging from 1 to 30
 
-Files : y_test, y_train
+#Files : y_test, y_train
 
 The y_test and y_train files contain the activity ids pertaining to the observations in X_test and X_train files respectively. The values of these activity ids range 1-6 representing the following:
 
@@ -129,7 +129,7 @@ The y_test and y_train files contain the activity ids pertaining to the observat
 5 STANDING
 6 LAYING
 
-Files : X_test, X_train
+#Files : X_test, X_train
 
 The fixed width (10) numeric data columns contained in the files X_test and X_train files are:
 
